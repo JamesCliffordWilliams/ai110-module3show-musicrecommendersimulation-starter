@@ -15,6 +15,35 @@ Replace this paragraph with your own summary of what your version does.
 
 ---
 
+## Guiding Questions For The Weekly Task
+
+**Representing the data**
+- What real attributes of a song change whether someone enjoys it?
+- Which of those attributes did you choose to model, and which did you leave out, and why?
+- How would you describe a listener's taste as data, and what is hard or impossible to capture in a few numbers?
+
+**Designing the scoring rule**
+- Why did each feature get the weight it did?
+- What happens to the results if the genre weight is cut in half, or doubled?
+- What does the energy score `1 - |difference|` assume about how people hear "energy", and when might it mislead?
+- Should a strong match on one feature outweigh a poor match on another, and does the scoring actually behave that way?
+
+**Evaluating it**
+- Can you predict a profile's top result before running it, and is the prediction right?
+- What is surprising in the results, and what does that reveal about the rules?
+- How do you know a recommendation is "good", and whose judgment decides that?
+
+**Bias and fairness**
+- Which genres or moods does the system tend to ignore, and why?
+- Does using the same scoring formula for everyone assume all users experience music the same way?
+- Who might be left underserved if this were a real product?
+
+**Reflection**
+- Where does the system's behavior really come from — the data, the weights, or the assumptions built into the rules?
+- Even if the model seems "smart", where would human judgment still matter?
+
+---
+
 ## How The System Works
 
 Explain your design in plain language.
